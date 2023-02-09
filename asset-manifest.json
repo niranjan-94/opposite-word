@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0302c28f.css",
-    "main.js": "/static/js/main.e5afc233.js",
-    "index.html": "/index.html",
-    "main.0302c28f.css.map": "/static/css/main.0302c28f.css.map",
-    "main.e5afc233.js.map": "/static/js/main.e5afc233.js.map"
+    "main.css": "/opposite-word/static/css/main.0302c28f.css",
+    "main.js": "/opposite-word/static/js/main.e5afc233.js",
+    "index.html": "/opposite-word/index.html",
+    "main.0302c28f.css.map": "/opposite-word/static/css/main.0302c28f.css.map",
+    "main.e5afc233.js.map": "/opposite-word/static/js/main.e5afc233.js.map"
   },
   "entrypoints": [
     "static/css/main.0302c28f.css",
