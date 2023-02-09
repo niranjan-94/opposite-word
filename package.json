@@ -1,7 +1,7 @@
 {
   "name": "opposite-word",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -34,5 +34,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  
+    "hosting": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  
 }
+
