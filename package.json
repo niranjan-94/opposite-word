@@ -50,5 +50,8 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
