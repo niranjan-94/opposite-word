@@ -1,38 +1,120 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.word-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.word {
+  font-size: 36px;
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.options-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.option {
+  font-size: 24px;
+  padding: 20px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.warning-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.warning {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.reset-button {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .word-container {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .word {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .options-container {
+    /* flex-direction: column; */
+    margin-top: 25px;
+  }
+
+  .option {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .warning-container {
+    font-size: 18px;
   }
 }
+
+@media (max-width: 400px) {
+  .word-container {
+    font-size: 14px;
+  }
+
+  .word {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .options-container {
+    margin-top: 20px;
+  }
+
+  .option {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .warning-container {
+    font-size: 14px;
+  }
+}
+
