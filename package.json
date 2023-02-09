@@ -19,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://niranjan-94.github.io/opposite-word/",
   "eslintConfig": {
     "extends": [
       "react-app",
